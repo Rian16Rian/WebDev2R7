@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const categoryButtons = document.querySelectorAll('.buttons button');
     const recipeCards = document.querySelectorAll('.recipe-card');
 
-    console.log(categoryButtons); // Check if buttons are selected
-    console.log(recipeCards); // Check if recipe cards are selected
+    console.log(categoryButtons); 
+    console.log(recipeCards); 
 
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
-            console.log('Button clicked'); // Check if event listener is triggered
+            console.log('Button clicked'); 
             const category = this.getAttribute('data-category');
-            console.log(category); // Check if category is retrieved correctly
+            console.log(category); 
             filterRecipeCards(category);
             highlightButton(button);
         });
