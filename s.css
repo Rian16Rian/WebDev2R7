@@ -354,8 +354,26 @@ text-decoration: underline;
 
 .team-detail p{
 	color:#aad496;
-	font-size: 18px;
+	font-size: 19px;
+	margin-top: 8px;;
 }
+
+a {
+	color: whitesmoke; 
+	transition: color 0.3s; 
+	margin-bottom: 2px;
+	font-size: 12px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  a:hover {
+	color: orange;
+  }
+  
+  a:active {
+	color: orange;
+  }
+  
 
 @media screen and (max-width: 768px) {
 	.team-cards{
