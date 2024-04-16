@@ -358,19 +358,20 @@ text-decoration: underline;
 	margin-top: 8px;;
 }
 
-a {
+.team-detail a {
 	color: whitesmoke; 
 	transition: color 0.3s; 
 	margin-bottom: 2px;
 	font-size: 12px;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-transform: none
   }
   
-  a:hover {
+  .team-detail a:hover {
 	color: orange;
   }
   
-  a:active {
+  .team-detail a:active {
 	color: orange;
   }
   
