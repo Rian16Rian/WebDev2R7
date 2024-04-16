@@ -10,6 +10,7 @@
 	text-decoration: none;
 	text-transform: capitalize;
 	transition: .2s linear;
+	
 }
 
 
@@ -72,60 +73,60 @@ section{
 
 }
 
-header{
-	position: fixed;
-	top:0; left:0; right:0;
-	background: #fff;
-	padding: 2rem 9%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 1000;
-	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-	color: #303C1B;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    color: #303C1B;
 }
 
-header .logo{
-	font-size: 3rem;
-	color: #333;
-	font-weight: bolder;
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
 }
 
-
-header .navbar a{
-	font-size: 2rem; 
-	padding: 0 1.5rem;
-	color: #666;
-
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
 }
 
-header .navbar a:hover{
-	color: darkorange;
+header .navbar a:hover {
+    color: darkorange;
 }
 
-header .icons a{
-	font-size: 3rem;
-	color: #333;
-	margin-left: 1.5rem;
+header .icons a {
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
 }
 
-header .icons a:hover{
-	color: darkorange;
+header .icons a:hover {
+    color: darkorange;
 }
 
- header #toggler {
- 	display: none;
- }
+header #toggler {
+    display: none;
+}
 
- header .fa-bars{
- 	font-size: 3rem;
- 	color: #333;
- 	border-radius: .5rem;
- 	padding: .5rem 1.5rem;
- 	cursor: pointer;
- 	border: .1rem solid rgba(0, 0, 0, 0.3);
- 	display: none;
- }
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
 
  body{
  	background-color: #c3d18c;
@@ -302,6 +303,8 @@ text-decoration: underline;
 	color:#000;
 	text-align: center;
 	position: relative;
+	text-decoration: underline;
+	margin-left: 20px;
 }
 
 .team-cards{
