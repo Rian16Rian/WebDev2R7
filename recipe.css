@@ -242,6 +242,70 @@ header .icons a:hover{
     background-color: darkorange;
 }
 
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Table */
+#ingredientsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ingredientsTable th, #ingredientsTable td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#ingredientsTable th {
+    background-color: #6d9773;
+    color: white;
+}
+
+#ingredientsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#ingredientsTable tr:hover {
+    background-color: #ddd;
+}
+
+
 
 @media (max-width: 991px){
     html{ font-size: 55%; }
