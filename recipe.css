@@ -242,70 +242,109 @@ header .icons a:hover{
     background-color: darkorange;
 }
 
-/* Modal */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+/* Contact Info Modal styles */
+#contactInfoModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.5); 
-    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
-    background-color: white;
-    margin: 5% auto; 
+#contactInfoModal .modal-content {
+    background-color: #fefefe;
+    margin: 8% auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    animation-name: modalopen;
-    animation-duration: 0.4s;
+    border: 1px solid #888;
+    width: 50%;
+	
 }
 
-.close {
-    color: #aaaaaa;
+#contactInfoModal .close {
+    color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
+#contactInfoModal .close:hover,
+#contactInfoModal .close:focus {
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Table */
-#ingredientsTable {
+#contactInfoModal p {
+    margin-bottom: 20px;
+	font-size: 14px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#contactInfoModal h2{
+    margin-bottom: 7px;
+	font-size: 30px;
+}
+
+#contactInfoModal h3{
+    margin-bottom: 7px;
+	font-size: 20px;
+}
+
+#contactInfoModal ul {
+    list-style-type: none;
+    padding-left: 0;
+	margin-bottom: 20px;
+	font-size: 15px;
+	
+}
+
+#contactInfoModal ul li {
+    margin-bottom: 5px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#contactInfoModal ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#contactInfoModal ul li a:hover {
+    color: darkorange;
+}
+
+#contactInfoModal form {
+    margin-top: 10px;
+}
+
+#contactInfoModal input[type="email"],
+#contactInfoModal textarea {
     width: 100%;
-    border-collapse: collapse;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
 
-#ingredientsTable th, #ingredientsTable td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+#contactInfoModal button[type="submit"] {
+    background-color: darkorange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#ingredientsTable th {
-    background-color: #6d9773;
-    color: white;
+#contactInfoModal button[type="submit"]:hover {
+    background-color: #ff7f00;
 }
-
-#ingredientsTable tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-#ingredientsTable tr:hover {
-    background-color: #ddd;
-}
-
-
 
 @media (max-width: 991px){
     html{ font-size: 55%; }

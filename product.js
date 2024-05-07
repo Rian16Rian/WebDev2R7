@@ -13,6 +13,7 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
 
+
 let products = [
     {
         id: 1,
@@ -97,6 +98,7 @@ function reloadCard(){
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
 }
+
 function changeQuantity(key, quantity){
     if(quantity == 0){
         delete listCards[key];
