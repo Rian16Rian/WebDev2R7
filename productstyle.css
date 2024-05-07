@@ -8,16 +8,11 @@ body{
     transition: 0.5s;
 }
 
-.shoppingheader{
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    margin-top: 60px;
-}
-.shoppingheader .shopping{
+.shopping{
     position: relative;
     text-align: right;
 }
-.shoppingheader .shopping img{
+.shopping img{
     width: 40px;
 }
 header .shopping span{
@@ -83,7 +78,7 @@ header .shopping span{
 .card h1{
     color: #E8BC0E;
     font-weight: 100;
-    margin: 0;
+    margin-top: 60px;
     padding: 0 20px;
     height: 80px;
     display: flex;
@@ -153,7 +148,6 @@ header .logo{
     font-weight: bolder;
 }
 
-
 header .navbar a{
     font-size: 20px; 
     padding: 0 1.5rem;
@@ -205,4 +199,36 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden; 
+}
+
+
+.icons {
+    display: flex;
+    align-items: center; 
+}
+
+.icons a {
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+    text-decoration: none; 
+
+.icons a:hover {
+    color: darkorange;
+}
+
+.shopping {
+    display: flex; 
+    align-items: center; 
+    margin-left: 1.5rem; 
+   }
+
+.shopping .quantity {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 3px 10px;
 }
