@@ -1,4 +1,13 @@
 import React from 'react';
+import card1 from '../assets/IMG/onion-syrup.jpg';
+import card2 from '../assets/IMG/ginger-lemon-syrup.jpg';
+import card3 from '../assets/IMG/Moringa Smoothie.jpg';
+import card4 from '../assets/IMG/turmeric-milk.jpg';
+import card5 from '../assets/IMG/Lemon_Lavander.JPG';
+import card6 from '../assets/IMG/balsamic-vinegar.jpg';
+import card7 from '../assets/IMG/mint-mojito.jpg';
+import card8 from '../assets/IMG/potatoes.jpg';
+
 
 const Container = () => {
   return (
@@ -6,7 +15,7 @@ const Container = () => {
       <h1>Herb Benefits</h1>
 <div class="card_container">
 	<article class="card_article">
-		<img src="../assets/IMG/onion-syrup.jpg" alt="image" class="card_img"/>
+		<img src={card1} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description"> Making red onion syrup can provide various benefits, including its potential to soothe coughs and sore throats due to its natural antibacterial properties, and it may also offer relief from respiratory congestion.</span>
@@ -16,7 +25,7 @@ const Container = () => {
 	</article>
 
 	<article class="card_article">
-		<img src="../assets/IMG/ginger-lemon-syrup.jpg" alt="image" class="card_img"/>
+		<img src={card2} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description"> Ginger lemon syrup combines the antibacterial properties of ginger with the vitamin C-rich lemon to potentially soothe sore throats, alleviate nausea, aid digestion, and boost the immune system. </span>
@@ -26,7 +35,7 @@ const Container = () => {
 	</article>
 
 	<article class="card_article">
-		<img src="../assets/IMG/Moringa Smoothie.jpg" alt="image" class="card_img"/>
+		<img src={card3} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description">A Moringa smoothie offers a powerhouse of nutrients, including vitamins, minerals, and antioxidants, supporting immune function, improving energy levels, and promoting overall health and vitality.</span>
@@ -36,7 +45,7 @@ const Container = () => {
 	</article>
 
 	<article class="card_article">
-		<img src="../assets/IMG/turmeric-milk.jpg" alt="image" class="card_img"/>
+		<img src={card4} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description">Turmeric milk, also known as "golden milk," offers a potent blend of anti-inflammatory compounds and antioxidants from turmeric, providing potential relief from joint pain, promoting digestion, supporting immune function, and aiding in relaxation and better sleep.</span>
@@ -45,7 +54,7 @@ const Container = () => {
 	</div>
 	</article>
 	<article class="card_article">
-		<img src="../assets/IMG/Lemon_Lavander.JPG" alt="image" class="card_img"/>
+		<img src={card5} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description">Delicate shortbread cookies infused with dried lavender and lemon zest offer a calming aroma and potential stress-relieving properties.</span>
@@ -55,7 +64,7 @@ const Container = () => {
 	</article>
 
 	<article class="card_article">
-		<img src="../assets/IMG/balsamic-vinegar.jpg" alt="image" class="card_img"/>
+		<img src={card6} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description"> Balsamic vinegar contains antioxidants, supports heart health, and may help regulate blood sugar levels.</span>
@@ -65,7 +74,7 @@ const Container = () => {
 	</article>
 	
 	<article class="card_article">
-		<img src="../assets/IMG/mint-mojito.jpg" alt="image" class="card_img"/>
+		<img src={card7} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description"> Savor a classic mojito with a herbal twist from fresh mint leaves, offering digestive relief and a cooling sensation.</span>
@@ -75,7 +84,7 @@ const Container = () => {
 	</article>
 
 	<article class="card_article">
-		<img src="../assets/IMG/potatoes.jpg" alt="image" class="card_img"/>
+		<img src={card8} alt="image" class="card_img"/>
 
 		<div class="card_data">
 			<span class="card_description"> Comforting and aromatic, roasted potatoes with rosemary not only make a delicious side dish but also provide potential cognitive and digestive benefits from the rosemary.</span>
