@@ -98,6 +98,7 @@ header .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #666;
+	
 }
 
 header .navbar a:hover {
@@ -130,11 +131,7 @@ header .fa-bars {
 
 body {
     background-color: #c3d18c;
-    background-image: url('../assets/IMG/HERBSBG.png'); /* Updated path */
-}
-
-.about-content {
-    background-image: url('../assets/IMG/AbtUSHEADER.png'); /* Updated path */
+   
 }
 
 .home {
@@ -267,6 +264,7 @@ text-decoration: underline;
     margin-top: 50px;
     min-height: 100vh;    
    	min-width: 200vh;
+	background-image: url('../assets/IMG/AbtUSHEADER.png'); /* Updated path */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

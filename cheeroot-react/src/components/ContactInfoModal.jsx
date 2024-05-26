@@ -1,10 +1,10 @@
 import React from 'react';
 
-function ContactInfoModal() {
+function ContactInfoModal({ closeModal }) {
   return (
     <div id="contactInfoModal" className="modal">
       <div className="modal-content">
-        <span className="close">&times;</span>
+        <span className="close" onClick={closeModal}>&times;</span>
         <h2>Contact Us</h2>
         <p>Feel free to reach out to us via email or through our social media accounts:</p>
         <ul>
