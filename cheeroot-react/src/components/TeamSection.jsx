@@ -1,7 +1,10 @@
 import React from 'react';
-import '../css/s.css';
-import kristal from '../assets/IMG/kristal.jpg';
-import rianson from '../assets/IMG/rianson.jpg';
+import '../css/s.css'; // Ensure this path is correct
+import kristal from '../assets/IMG/kristal.jpg'; // Ensure this path is correct
+import rianson from '../assets/IMG/rianson.jpg'; // Ensure this path is correct
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 const TeamSection = () => {
   return (
@@ -17,10 +20,10 @@ const TeamSection = () => {
           <div className="team-detail">
             <h3>Kristal Sarsoza</h3>
             <a href="https://www.facebook.com/kristalangeline.sarsoza">
-              <i className="fab fa-facebook-square"></i> Kristal Angeline Sarsoza
+              <FontAwesomeIcon icon={faFacebookSquare} /> Kristal Angeline Sarsoza
             </a>
             <a href="mailto:sarsoza.kristal2003@gmail.com">
-              <i className="fas fa-envelope"></i> sarsoza.kristal2003@gmail.com
+              <FontAwesomeIcon icon={faEnvelope} /> sarsoza.kristal2003@gmail.com
             </a>
             <p>Web Developer</p>
           </div>
@@ -33,10 +36,10 @@ const TeamSection = () => {
           <div className="team-detail">
             <h3>Rianson Amar</h3>
             <a href="https://www.facebook.com/rianson.amar">
-              <i className="fab fa-facebook-square"></i> Rianson Amar
+              <FontAwesomeIcon icon={faFacebookSquare} /> Rianson Amar
             </a>
             <a href="mailto:amar.rianson16@gmail.com">
-              <i className="fas fa-envelope"></i> amar.rianson16@gmail.com
+              <FontAwesomeIcon icon={faEnvelope} /> amar.rianson16@gmail.com
             </a>
             <p>Web Developer</p>
           </div>
