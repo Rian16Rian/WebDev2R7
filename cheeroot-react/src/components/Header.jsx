@@ -1,9 +1,8 @@
 import React from 'react';
-import '../css/s.css'; // Correct relative path
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Header = ({ openModal }) => {
   return (
     <header>
       <input type="checkbox" id="toggler" />
@@ -16,7 +15,7 @@ const Header = () => {
         <a href="#about">About</a>
         <a href="recipe.html">Recipes</a>
         <a href="products.html">Products</a>
-        <a href="contacts.html">Contacts</a>
+        <a href="#contacts" id="contactLink" onClick={(e) => { e.preventDefault(); openModal(); }}>Contacts</a>
       </nav>
 
       <div className="icons">

@@ -2,15 +2,13 @@ import React from 'react';
 
 function ContactInfoModal({ closeModal }) {
   return (
-    <div id="contactInfoModal" className="modal">
+    <div id="contactInfoModal" className="modal" style={{ display: 'block' }}>
       <div className="modal-content">
         <span className="close" onClick={closeModal}>&times;</span>
         <h2>Contact Us</h2>
         <p>Feel free to reach out to us via email or through our social media accounts:</p>
         <ul>
-          <li>
-            Email: <a href="mailto:cheeroot.official@gmail.com">cheeroot.official@gmail.com</a>
-          </li>
+          <li>Email: <a href="mailto:cheeroot.official@gmail.com">cheeroot.official@gmail.com</a></li>
           <li>Facebook: <a href="#">Facebook Page</a></li>
           <li>Instagram: <a href="#">Instagram Page</a></li>
         </ul>
