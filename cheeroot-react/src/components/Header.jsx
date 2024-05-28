@@ -1,8 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import herbslogo from '../assets/IMG/herbslogo.png';
-
 
 const Header = ({ openModal }) => {
   return (
@@ -12,13 +11,13 @@ const Header = ({ openModal }) => {
       <input type="checkbox" id="toggler" />
       <label htmlFor="toggler" className="fas fa-bars"></label>
 
-      <a href="#home" className="logo">Cheeroot √</a>
+      <Link to="/" className="logo">Cheeroot √</Link>
 
       <nav className="navbar">
-        <a href="project.html">Home</a>
-        <a href="#about">About</a>
-        <a href="recipe.html">Recipes</a>
-        <a href="products.html">Products</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/recipepage">Recipes</Link>
+        <Link to="/productpage">Products</Link>
         <a href="#contacts" id="contactLink" onClick={(e) => { e.preventDefault(); openModal(); }}>Contacts</a>
       </nav>
 
