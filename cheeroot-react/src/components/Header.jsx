@@ -26,6 +26,8 @@ const Header = ({ openModal }) => {
           <FontAwesomeIcon icon={faUser} />
         </a>
       </div>
+
+      
     </header>
   );
 }
