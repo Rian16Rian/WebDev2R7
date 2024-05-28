@@ -1,10 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import herbslogo from '../assets/IMG/herbslogo.png';
+
 
 const Header = ({ openModal }) => {
   return (
     <header>
+      <title>Cheeroot - Recipe Page</title>
+
       <input type="checkbox" id="toggler" />
       <label htmlFor="toggler" className="fas fa-bars"></label>
 
