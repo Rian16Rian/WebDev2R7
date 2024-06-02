@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/product.css'; // Assuming you have a CSS file for styling
+import '../css/product.css'; 
 import placeholder from '../assets/IMG/placeholder.png';
 import shoppingCartIcon from '../assets/IMG/shopping-cart.webp';
 
