@@ -26,6 +26,57 @@ section{
 	padding: 2rem 9%;
 }
 
+/*user profile*/
+header .icons {
+	position: relative;
+	cursor: pointer; /* Change cursor to pointer to indicate clickable area */
+  }
+  
+  .user-profile {
+	display: none; /* Initially hidden */
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: white;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 300px; /* Adjust as needed */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+  }
+  
+  .user-profile .profile-image {
+	width: 60px; /* Adjust size as needed */
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 10px; /* Adjusted to position image on the right */
+  }
+  
+  .user-details {
+	margin-left: 10px;
+  }
+  
+  .user-details h3 {
+	font-size: 1.6rem;
+	margin: 0;
+  }
+  
+  .user-details .username {
+	font-size: 1.2rem;
+	color: #666;
+  }
+  
+  .user-details p {
+	font-size: 1.2rem;
+	margin: 5px 0;
+  }
+  
+  .icons .user-profile {
+	display: flex; /* Show profile when class is added */
+  }
+  
 .btn{
 	display: inline-block;
 	margin-top: 1rem;
@@ -201,7 +252,7 @@ body {
 	width: 250px;
 	height: 200px;
 	border-radius: 1.5rem;
-
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
 .card_data{
@@ -218,6 +269,7 @@ body {
 	transition: opacity 1s 1s;
 	opacity: 0;
 	font-size:11px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
 .cad_description{
@@ -234,15 +286,6 @@ body {
 	margin-top: .75rem;
 }
 
-.card_button{
-	text-decoration: none;;
-	font-weight: 500;
-	color: darkgreen;
-}
-
-.card_button:hover{
-text-decoration: underline;
-}
 
 
 /*animation_card*/
@@ -380,7 +423,6 @@ text-decoration: underline;
   .team-detail a:active {
 	color: orange;
   }
-  
 
 @media screen and (max-width: 768px) {
 	.team-cards{

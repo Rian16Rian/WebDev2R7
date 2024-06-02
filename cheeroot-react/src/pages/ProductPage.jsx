@@ -4,12 +4,12 @@ import placeholder from '../assets/IMG/placeholder.png';
 import shoppingCartIcon from '../assets/IMG/shopping-cart.webp';
 
 const products = [
-  { id: 1, name: 'PRODUCT NAME 1', IMG: placeholder, price: 120000 },
-  { id: 2, name: 'PRODUCT NAME 2', IMG: placeholder, price: 120000 },
-  { id: 3, name: 'PRODUCT NAME 3', IMG: placeholder, price: 220000 },
-  { id: 4, name: 'PRODUCT NAME 4', IMG: placeholder, price: 123000 },
-  { id: 5, name: 'PRODUCT NAME 5', IMG: placeholder, price: 320000 },
-  { id: 6, name: 'PRODUCT NAME 6', IMG: placeholder, price: 120000 },
+  { id: 1, name: 'PRODUCT NAME 1', IMG: placeholder, price: 320},
+  { id: 2, name: 'PRODUCT NAME 2', IMG: placeholder, price: 500},
+  { id: 3, name: 'PRODUCT NAME 3', IMG: placeholder, price: 800},
+  { id: 4, name: 'PRODUCT NAME 4', IMG: placeholder, price: 1230},
+  { id: 5, name: 'PRODUCT NAME 5', IMG: placeholder, price: 320},
+  { id: 6, name: 'PRODUCT NAME 6', IMG: placeholder, price: 120},
 ];
 
 function ProductPage() {
@@ -65,7 +65,7 @@ function ProductPage() {
       </div>
 
       <div className={`card ${isCartOpen ? 'open' : ''}`}>
-        <h1>Cart</h1>
+        <h1>Add to Cart</h1>
         <ul className="listCard">
           {listCards.map(item => (
             <li key={item.id}>
@@ -86,10 +86,12 @@ function ProductPage() {
         </div>
       </div>
       
-      <div className="shopping" onClick={() => setIsCartOpen(true)}>
-        <img src={shoppingCartIcon} alt="Shopping Cart" />
-        <span className="quantity">{totalQuantity}</span>
-      </div>
+      {!isCartOpen && (
+        <div className="shopping" onClick={() => setIsCartOpen(true)}>
+          <img src={shoppingCartIcon} alt="Shopping Cart" />
+          <span className="quantity">{totalQuantity}</span>
+        </div>
+      )}
     </div>
   );
 }

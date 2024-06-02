@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import UserProfile from './UserProfile'; 
 
 const Header = ({ openModal }) => {
+  const [isProfileVisible, setProfileVisible] = useState(false);
+
+  const toggleProfileVisibility = () => {
+    setProfileVisible(!isProfileVisible);
+  };
+
   return (
     <header>
       <title>Cheeroot - Recipe Page</title>
@@ -21,13 +28,12 @@ const Header = ({ openModal }) => {
         <a href="#contacts" id="contactLink" onClick={(e) => { e.preventDefault(); openModal(); }}>Contacts</a>
       </nav>
 
-      <div className="icons">
+      <div className="icons" onClick={toggleProfileVisibility}>
         <a href="#">
           <FontAwesomeIcon icon={faUser} />
         </a>
+        {isProfileVisible && <UserProfile />} 
       </div>
-
-      
     </header>
   );
 }

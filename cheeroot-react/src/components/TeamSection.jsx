@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/s.css'; // Ensure this path is correct
-import kristal from '../assets/IMG/kristal.jpg'; // Ensure this path is correct
-import rianson from '../assets/IMG/rianson.jpg'; // Ensure this path is correct
+import '../css/s.css'; 
+import kristal from '../assets/IMG/kristal.jpg'; 
+import rianson from '../assets/IMG/rianson.jpg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';

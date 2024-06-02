@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var closeBtn = modal.querySelector(".close");
 
     contactLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        modal.style.display = "block"; // Display the modal
+        event.preventDefault(); 
+        modal.style.display = "block"; 
     });
 
     closeBtn.onclick = function() {
