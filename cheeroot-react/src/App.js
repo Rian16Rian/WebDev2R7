@@ -23,14 +23,14 @@ function App() {
   };
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Header openModal={openModal} />
         {isModalOpen && <ContactInfoModal closeModal={closeModal} />}
 
         <Routes>
           <Route
-            path="/"
+            path="/amar-sarsoza/"
             element={
               <>
                 <Home />
@@ -40,15 +40,15 @@ function App() {
               </>
             }
           />
-          <Route path="amar-sarsoza/recipepage" element={<RecipePage />} />
-          <Route path="amar-sarsoza/productpage" element={<ProductPage />} />
-          <Route path="amar-sarsoza/about" element={<About />} />
-          <Route path="amar-sarsoza/team" element={<TeamSection />} />
+          <Route path="/amar-sarsoza/recipepage" element={<RecipePage />} />
+          <Route path="/amar-sarsoza/productpage" element={<ProductPage />} />
+          <Route path="/amar-sarsoza/about" element={<About />} />
+          <Route path="/amar-sarsoza/team" element={<TeamSection />} />
         </Routes>
 
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
