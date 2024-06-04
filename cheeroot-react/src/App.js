@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <HashRouter>
+    <Router>
       <div className="App">
         <Header openModal={openModal} />
         {isModalOpen && <ContactInfoModal closeModal={closeModal} />}
@@ -48,7 +48,7 @@ function App() {
 
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
