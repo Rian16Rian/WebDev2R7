@@ -78,7 +78,7 @@ const recipes = [
     category: 'desserts',
     img: dessert1,
     title: 'Rose Petal Jam',
-    description: 'Rose petals are rich in antioxidants and add a delicate flavor to jams.',
+    description: 'Rose petals are rich in antioxidants and add a delicate flavor to jams. It blends earthy rosemary with tangy balsamic vinegar, perfect for fresh salads.',
     ingredients: [
       { name: 'Fresh Rose Petals', quantity: '2 cups', servings: '2 cups of jam' },
       { name: 'Sugar', quantity: '2 cups', servings: '2 cups of jam' },
