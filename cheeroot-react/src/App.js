@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import ContactInfoModal from './components/ContactInfoModal';
@@ -40,10 +40,10 @@ function App() {
               </>
             }
           />
-          <Route path="/recipepage" element={<RecipePage />} />
-          <Route path="/productpage" element={<ProductPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/team" element={<TeamSection />} />
+          <Route path="amar-sarsoza/recipepage" element={<RecipePage />} />
+          <Route path="amar-sarsoza/productpage" element={<ProductPage />} />
+          <Route path="amar-sarsoza/about" element={<About />} />
+          <Route path="amar-sarsoza/team" element={<TeamSection />} />
         </Routes>
 
         <Footer />
