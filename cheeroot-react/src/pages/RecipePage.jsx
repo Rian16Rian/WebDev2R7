@@ -1,14 +1,14 @@
 import React, { useState, useRef } from 'react';
-import beverages1 from '../assets/IMG/beverages1.jpg';
-import remedies1 from '../assets/IMG/remedies1.jpg';
-import beverages2 from '../assets/IMG/beverages2.jpg';
-import sauces1 from '../assets/IMG/sauces1.jpeg';
-import dessert1 from '../assets/IMG/dessert1.jpg';
-import dessert2 from '../assets/IMG/dessert2.jpg';
-import sauces2 from '../assets/IMG/sauces2.jpg';
-import remedies2 from '../assets/IMG/remedies2.jpg';
-import dessert3 from '../assets/IMG/dessert3.jpg';
-import recipeHeaderVid from '../assets/IMG/VIDS/RECIPE-HEADER-VID.mp4';
+import beverages1 from '../assets/IMG/beverages1.webp';
+import remedies1 from '../assets/IMG/remedies1.webp';
+import beverages2 from '../assets/IMG/beverages2.webp';
+import sauces1 from '../assets/IMG/sauces1.webp';
+import dessert1 from '../assets/IMG/dessert1.webp';
+import dessert2 from '../assets/IMG/dessert2.webp';
+import sauces2 from '../assets/IMG/sauces2.webp';
+import remedies2 from '../assets/IMG/remedies2.webp';
+import dessert3 from '../assets/IMG/dessert3.webp';
+import recipeHeaderVid from '../assets/IMG/VIDS/RECIPE-HEADER-VID.webm';
 import RecipeModal from './RecipeModal';
 import '../css/recipe.css';
 
@@ -209,7 +209,7 @@ function RecipePage() {
     <div className="body">
       <div className="container1" id="content1" ref={scrollRef}>
         <video autoPlay loop muted playsInline className="background-clip">
-          <source src={recipeHeaderVid} type="video/mp4" />
+          <source src={recipeHeaderVid} type="video/webm" />
         </video>
 
         <div className="content1">

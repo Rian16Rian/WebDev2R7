@@ -189,7 +189,7 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url('../assets/IMG/HERBSBG.png'); /* Updated path */
+    background: url('../assets/IMG/HERBSBG.webp'); /* Updated path */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -307,7 +307,7 @@ body {
     margin-top: 50px;
     min-height: 100vh;    
    	min-width: 200vh;
-	background-image: url('../assets/IMG/AbtUSHEADER.png'); /* Updated path */
+	background-image: url('../assets/IMG/AbtUSHEADER.webp'); /* Updated path */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

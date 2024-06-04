@@ -136,7 +136,7 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;    
-    background: url("IMG/HERBSBG.png");
+    background: url("IMG/HERBSBG.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -263,7 +263,7 @@ text-decoration: underline;
     margin-top: 50px;
     min-height: 100vh;    
    	min-width: 200vh;
-    background: url("IMG/AbtUSHEADER.png");
+    background: url("IMG/AbtUSHEADER.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

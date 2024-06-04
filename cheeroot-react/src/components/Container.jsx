@@ -1,12 +1,12 @@
 import React from 'react';
-import card1 from '../assets/IMG/onion-syrup.jpg';
-import card2 from '../assets/IMG/ginger-lemon-syrup.jpg';
-import card3 from '../assets/IMG/Moringa Smoothie.jpg';
-import card4 from '../assets/IMG/turmeric-milk.jpg';
-import card5 from '../assets/IMG/Lemon_Lavander.JPG';
-import card6 from '../assets/IMG/balsamic-vinegar.jpg';
-import card7 from '../assets/IMG/mint-mojito.jpg';
-import card8 from '../assets/IMG/potatoes.jpg';
+import card1 from '../assets/IMG/onion-syrup.webp';
+import card2 from '../assets/IMG/ginger-lemon-syrup.webp';
+import card3 from '../assets/IMG/Moringa Smoothie.webp';
+import card4 from '../assets/IMG/turmeric-milk.webp';
+import card5 from '../assets/IMG/Lemon_Lavander.webp';
+import card6 from '../assets/IMG/balsamic-vinegar.webp';
+import card7 from '../assets/IMG/mint-mojito.webp';
+import card8 from '../assets/IMG/potatoes.webp';
 
 const Container = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../css/product.css'; 
-import placeholder from '../assets/IMG/placeholder.png';
+import placeholder from '../assets/IMG/placeholder.webp';
 import shoppingCartIcon from '../assets/IMG/shopping-cart.webp';
 
 const products = [

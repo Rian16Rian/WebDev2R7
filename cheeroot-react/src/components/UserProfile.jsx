@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/IMG/userprofile.jpg';
+import profileImage from '../assets/IMG/userprofile.webp';
 
 const UserProfile = () => {
     return (

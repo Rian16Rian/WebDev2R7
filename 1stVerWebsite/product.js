@@ -18,37 +18,37 @@ let products = [
     {
         id: 1,
         name: 'PRODUCT NAME 1',
-        IMG: 'placeholder.png',
+        IMG: 'placeholder.WEBP',
         price: 120000
     },
     {
         id: 2,
         name: 'PRODUCT NAME 2',
-        IMG: 'placeholder.png',
+        IMG: 'placeholder.WEBP',
         price: 120000
     },
     {
         id: 3,
         name: 'PRODUCT NAME 3',
-        IMG: 'placeholder.png',
+        IMG: 'placeholder.WEBP',
         price: 220000
     },
     {
         id: 4,
         name: 'PRODUCT NAME 4',
-        IMG: 'placeholder.png',
+        IMG: 'placeholder.WEBP',
         price: 123000
     },
     {
         id: 5,
         name: 'PRODUCT NAME 5',
-        IMG: 'placeholder.png',
+        IMG: 'placeholder.WEBP',
         price: 320000
     },
     {
         id: 6,
         name: 'PRODUCT NAME 6',
-        IMG: 'placeholder.png',
+        IMG: 'placeholder.WEBP',
         price: 120000
     }
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/s.css'; 
-import kristal from '../assets/IMG/kristal.jpg'; 
-import rianson from '../assets/IMG/rianson.jpg'; 
+import kristal from '../assets/IMG/kristal.webp'; 
+import rianson from '../assets/IMG/rianson.webp'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
