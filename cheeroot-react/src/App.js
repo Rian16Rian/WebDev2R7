@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import ContactInfoModal from './components/ContactInfoModal';
@@ -23,14 +23,14 @@ function App() {
   };
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Header openModal={openModal} />
         {isModalOpen && <ContactInfoModal closeModal={closeModal} />}
 
         <Routes>
           <Route
-            path="/amar-sarsoza/"
+            path="/"
             element={
               <>
                 <Home />
@@ -40,15 +40,15 @@ function App() {
               </>
             }
           />
-          <Route path="/amar-sarsoza/recipepage" element={<RecipePage />} />
-          <Route path="/amar-sarsoza/productpage" element={<ProductPage />} />
-          <Route path="/amar-sarsoza/about" element={<About />} />
-          <Route path="/amar-sarsoza/team" element={<TeamSection />} />
+          <Route path="/recipepage" element={<RecipePage />} />
+          <Route path="/productpage" element={<ProductPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/team" element={<TeamSection />} />
         </Routes>
 
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
