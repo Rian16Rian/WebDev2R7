@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
 import '../css/product.css'; 
-import placeholder from '../assets/IMG/placeholder.webp';
+import a from '../assets/IMG/a.webp'
+import b from '../assets/IMG/b.webp'
+import c from '../assets/IMG/c.webp'
+import d from '../assets/IMG/d.webp';
+import e from '../assets/IMG/e.webp';
+import f from '../assets/IMG/f.webp';
+import g from '../assets/IMG/g.webp';
+import h from '../assets/IMG/h.webp';
 import shoppingCartIcon from '../assets/IMG/shopping-cart.webp';
 
 const products = [
-  { id: 1, name: 'PRODUCT NAME 1', IMG: placeholder, price: 320},
-  { id: 2, name: 'PRODUCT NAME 2', IMG: placeholder, price: 500},
-  { id: 3, name: 'PRODUCT NAME 3', IMG: placeholder, price: 800},
-  { id: 4, name: 'PRODUCT NAME 4', IMG: placeholder, price: 1230},
-  { id: 5, name: 'PRODUCT NAME 5', IMG: placeholder, price: 320},
-  { id: 6, name: 'PRODUCT NAME 6', IMG: placeholder, price: 120},
-  { id: 7, name: 'PRODUCT NAME 7', IMG: placeholder, price: 80},
-  { id: 8, name: 'PRODUCT NAME 8', IMG: placeholder, price: 100},
+  { id: 1, name: 'Traditional Medicinals Organic Ginger Aid Tea', IMG: a, price: 320},
+  { id: 2, name: 'Aura Cacia Rosemary Essential Oil', IMG: b, price: 500},
+  { id: 3, name: 'Dr. Bronners Pure Castile Liquid Soap' , IMG: c, price: 800},
+  { id: 4, name: 'Gaia Herbs Elderberry Syrup', IMG: d, price: 1230},
+  { id: 5, name: 'doTERRA Lavender Essential Oil', IMG: e, price: 320},
+  { id: 6, name: 'Badger Balm Unscented Healing Balm', IMG: f, price: 120},
+  { id: 7, name: 'Herb Pharm Valerian Extract', IMG: g, price: 80},
+  { id: 8, name: 'Natures Way Echinacea Goldenseal Capsules', IMG: h, price: 100},
 ];
 
 function ProductPage() {
