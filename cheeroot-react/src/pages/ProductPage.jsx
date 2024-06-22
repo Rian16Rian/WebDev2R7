@@ -10,6 +10,8 @@ const products = [
   { id: 4, name: 'PRODUCT NAME 4', IMG: placeholder, price: 1230},
   { id: 5, name: 'PRODUCT NAME 5', IMG: placeholder, price: 320},
   { id: 6, name: 'PRODUCT NAME 6', IMG: placeholder, price: 120},
+  { id: 7, name: 'PRODUCT NAME 7', IMG: placeholder, price: 80},
+  { id: 8, name: 'PRODUCT NAME 8', IMG: placeholder, price: 100},
 ];
 
 function ProductPage() {
@@ -53,12 +55,16 @@ function ProductPage() {
 
   return (
     <div className="container2">
+      <div className="header">
+        <h1>New Arrivals</h1>
+        <p>Explore Our Latest Collection Of Premium Quality Organic Herbs. Sourced From Trusted Farms, Our Products Ensure Maximum Freshness And Nutritional Value.</p>
+      </div>
       <div className="list">
         {products.map((product, key) => (
           <div className="item" key={product.id}>
             <img src={product.IMG} alt={product.name} />
             <div className="title">{product.name}</div>
-            <div className="price">{product.price.toLocaleString()}</div>
+            <div className="price">₱{product.price.toLocaleString()}</div>
             <button onClick={() => addToCard(key)}>Add To Cart</button>
           </div>
         ))}
@@ -71,7 +77,7 @@ function ProductPage() {
             <li key={item.id}>
               <div><img src={item.IMG} alt={item.name} /></div>
               <div>{item.name}</div>
-              <div>{item.price.toLocaleString()}</div>
+              <div>₱{item.price.toLocaleString()}</div>
               <div>
                 <button onClick={() => changeQuantity(item.id, item.quantity - 1)}>-</button>
                 <div className="count">{item.quantity}</div>
@@ -81,7 +87,7 @@ function ProductPage() {
           ))}
         </ul>
         <div className="checkOut">
-          <div className="total">{totalPrice.toLocaleString()}</div>
+          <div className="total">₱{totalPrice.toLocaleString()}</div>
           <div className="closeShopping" onClick={() => setIsCartOpen(false)}>Close</div>
         </div>
       </div>

@@ -7,11 +7,18 @@ import card5 from '../assets/IMG/Lemon_Lavander.webp';
 import card6 from '../assets/IMG/balsamic-vinegar.webp';
 import card7 from '../assets/IMG/mint-mojito.webp';
 import card8 from '../assets/IMG/potatoes.webp';
+import extraforspace from '../assets/IMG/extra.webp';
 
 const Container = () => {
   return (
-    <div className="container">
-      <h1>Herb Benefits</h1>
+    <div id ="container">
+  
+      <img src={extraforspace} alt="leaves" className="imgspace" /> 
+
+      <div id = "titlecontainer">
+      <h1><span class="highlight">Incredible</span> Benefits of Herbs:</h1>
+        </div>
+      
       <div className="card_container">
         {/* Card 1 */}
         <article className="card_article">
@@ -101,6 +108,8 @@ const Container = () => {
         </div>
       </article>
       </div>
+
+
     </div>
   );
 }

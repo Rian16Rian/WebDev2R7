@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import beverages1 from '../assets/IMG/beverages1.webp';
 import remedies1 from '../assets/IMG/remedies1.webp';
 import beverages2 from '../assets/IMG/beverages2.webp';
@@ -8,11 +8,11 @@ import dessert2 from '../assets/IMG/dessert2.webp';
 import sauces2 from '../assets/IMG/sauces2.webp';
 import remedies2 from '../assets/IMG/remedies2.webp';
 import dessert3 from '../assets/IMG/dessert3.webp';
-import recipeHeaderVid from '../assets/IMG/VIDS/RECIPE-HEADER-VID.webm';
 import RecipeModal from './RecipeModal';
 import '../css/recipe.css';
 
 const recipes = [
+
   {
     category: 'beverages',
     img: beverages1,
@@ -203,25 +203,14 @@ function RecipePage() {
 
   const filteredRecipes = activeCategory === 'all' 
     ? recipes 
-    : recipes.filter(recipe => recipe.category === activeCategory);
-
+    : recipes.filter(recipe => recipe.category === activeCategory);    
+    
   return (
     <div className="body">
       <div className="container1" id="content1" ref={scrollRef}>
-        <video autoPlay loop muted playsInline className="background-clip">
-          <source src={recipeHeaderVid} type="video/webm" />
-        </video>
-
-        <div className="content1">
-          <h1>Herbalicious</h1>
-          <p>Elevate Your Journey with Fresh Flavors and Timeless Traditions</p>
-          <a href="#menu">Explore Now</a>
-        </div>
-
         <div className="menu" id="menu">
           <div className="heading">
-            <h1>Cheeroot's Recipes</h1>
-            <h3>&mdash; CATEGORIES &mdash;</h3>
+            <h3>&mdash; Explore Recipes &mdash;</h3>
           </div>
         </div>
 
@@ -240,15 +229,16 @@ function RecipePage() {
         </div>
 
         <div className="recipe-cards">
-          {filteredRecipes.map((recipe, index) => (
-            <div className="recipe-card" key={index} data-category={recipe.category}>
-              <img src={recipe.img} alt={recipe.title} />
-              <h3>{recipe.title}</h3>
-              <p>{recipe.description}</p>
-              <a href="#" onClick={(event) => handleViewRecipeClick(recipe, event)}>View Recipe</a>
-            </div>
-          ))}
-        </div>
+        {filteredRecipes.map((recipe, index) => (
+          <div className="recipe-card" key={index} data-category={recipe.category}>
+            <img src={recipe.img} alt={recipe.title} />
+            <h3>{recipe.title}</h3>
+            <p>{recipe.description}</p>
+            <a href="#" onClick={(event) => handleViewRecipeClick(recipe, event)}>View Recipe</a>
+          </div>
+        ))}
+      </div>
+
       </div>
 
       <RecipeModal 

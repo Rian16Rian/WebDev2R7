@@ -1,24 +1,23 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
   return (
-    <section className="home" id="home">
-      <div className="content">
-        <h3>Fresh Herbs</h3>
-        <span>Natural & Nutritious</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
-        </p>
-        <a href="recipe.html" className="btn">
-          <b>Explore Now</b>
-        </a>
+    <>
+    <header className="home">
+      <div className="overlay">
+        <h1>FRESH HERBS</h1>
+        <h2>Natural & Nutritious</h2>
+        <p>Elevate Your Journey With Fresh Flavors And Timeless Traditions</p>
+        <a href="#titlecontainer" className="explore-button">EXPLORE</a>
+        <div className="icon">
+          <FontAwesomeIcon icon={faAngleDown} />
+        </div>
       </div>
-    </section>
-  );
+    </header>
+  </>
+);
 }
 
 export default Home;

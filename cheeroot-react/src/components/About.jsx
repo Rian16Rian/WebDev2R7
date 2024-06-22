@@ -6,8 +6,11 @@ const About = () => {
       <div className="about-content">
         <h2>About Us</h2>
         <p>Welcome to Cheeroot, your one-stop destination for fresh and natural herbs. At Cheeroot, we believe in the power of nature to enhance health and wellness. Our mission is to provide high-quality herbs sourced directly from organic farms to ensure maximum nutritional benefits for our customers.</p>
-        <br />
         <p>With a team of dedicated experts in herbal medicine and sustainable agriculture, we strive to promote holistic living and environmental stewardship. Whether you're looking for ingredients for your homemade remedies or seeking natural supplements for your wellness journey, Cheeroot has you covered.</p>
+        <h3>- XOXO, Cheeroot.</h3>
+      </div>
+      <div className="about-image">
+        <img src={require('../assets/IMG/aboutus herbs.webp')} alt="About us" />
       </div>
     </section>
   );
