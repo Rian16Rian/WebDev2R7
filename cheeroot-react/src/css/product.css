@@ -295,3 +295,20 @@
      grid-template-columns: repeat(3, 1fr);
    }
  }
+
+@media (max-width: 992px) {
+   .card {
+     width: 80%; 
+     right: -80%; 
+   }
+ }
+ 
+ @media (max-width: 600px) {
+   .card {
+     width: 100%; 
+     right: -100%; 
+   }
+   .card.open {
+     right: 0; 
+   }
+ }
